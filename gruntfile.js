@@ -34,8 +34,21 @@ module.exports = function(grunt) {
       }
     },
 
+    connect: {
+      server: {
+        options: {
+          base: ['demo', 'dist'],
+          open: 'http://localhost:8000/index.html',
+          livereload: true
+        },
+      }
+    },
+
     watch: {
       all: {
+        options: {
+          livereload: true
+        },
         files: '<%= concat.all.src %>',
         tasks: ['default']
       }
@@ -52,6 +65,12 @@ module.exports = function(grunt) {
     'concat',
     'less',
     'cssmin'
+  ]);
+
+  grunt.registerTask('server', [
+    'default',
+    'connect',
+    'watch'
   ]);
 
 };

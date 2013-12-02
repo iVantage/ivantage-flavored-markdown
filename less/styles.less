@@ -1,0 +1,51 @@
+div, p, ul, li, ol, h1, h2, h3, h4, h5, h6, a, span, strong, em {
+  color: @ivTextColor;
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  &::selection {
+    color: @white;
+    background-color: @ivRedDark;
+  }
+
+  &::-moz-selection {
+    color: @white;
+    background-color: @ivRedDark;
+  }
+}
+
+a {
+  color: @ivRed;
+  text-decoration: none;
+  .transition(color 0.5s);
+
+  &:hover {
+    color: @ivRedDarker;
+  }
+}
+
+pre {
+  font-family: fixedsys,monospace !important;
+  padding: @ivPadding;
+  border: 1px solid @grayLight;
+  border-radius: @ivRadius;
+  background-color: @grayLighter;
+}
+
+p > code {
+  border: 1px solid @grayLight;
+  border-radius: @ivRadius;
+  background-color: @grayLighter;
+  padding: 0 3px;
+}
+
+blockquote p {
+  padding: @ivPadding;
+  border-left: 5px solid @ivRed;
+  border-right: 5px solid @ivRed;
+  border-top: 1px dashed @ivRed;
+  border-bottom: 1px dashed @ivRed;
+}
+
+strong, em {
+  color: @ivBrown;
+}

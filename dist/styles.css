@@ -1,0 +1,87 @@
+div,
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+strong,
+em {
+  color: #454545;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+div::selection,
+p::selection,
+ul::selection,
+li::selection,
+ol::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection,
+span::selection,
+strong::selection,
+em::selection {
+  color: #ffffff;
+  background-color: #c82b0f;
+}
+div::-moz-selection,
+p::-moz-selection,
+ul::-moz-selection,
+li::-moz-selection,
+ol::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection,
+a::-moz-selection,
+span::-moz-selection,
+strong::-moz-selection,
+em::-moz-selection {
+  color: #ffffff;
+  background-color: #c82b0f;
+}
+a {
+  color: #f05033;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+a:hover {
+  color: #98210b;
+}
+pre {
+  font-family: fixedsys,monospace !important;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  background-color: #eeeeee;
+}
+p > code {
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  background-color: #eeeeee;
+  padding: 0 3px;
+}
+blockquote p {
+  padding: 10px;
+  border-left: 5px solid #f05033;
+  border-right: 5px solid #f05033;
+  border-top: 1px dashed #f05033;
+  border-bottom: 1px dashed #f05033;
+}
+strong,
+em {
+  color: #767561;
+}
