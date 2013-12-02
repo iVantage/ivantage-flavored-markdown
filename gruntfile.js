@@ -38,7 +38,8 @@ module.exports = function(grunt) {
       server: {
         options: {
           base: ['demo', 'dist'],
-          open: 'http://localhost:8000/index.html',
+          port: 9090,
+          open: 'http://localhost:9090/index.html',
           livereload: true
         },
       }
