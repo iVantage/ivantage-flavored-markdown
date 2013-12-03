@@ -1,5 +1,9 @@
 # iVantage Flavored Markdown
 
-Styles and goodness.
+Built styles are placed in the `dist` folder and can be generated with `grunt`.
 
-To give us a baseline we'll start with the bootstrap mixins.
+You may sandbox your css rules using the `wrapper-class` option. E.g.
+
+```
+grunt --wrapper-class foobar
+```
