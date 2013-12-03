@@ -20,6 +20,14 @@ module.exports = function(grunt) {
       }
     },
 
+    less_wrapper: {
+      all: {
+        src: '<%= concat.all.dest %>',
+        dest: '<%= concat.all.dest %>',
+        wrapper: grunt.option('wrapper-class') || null
+      }
+    },
+
     less: {
       all: {
         src: '<%= concat.all.dest %>',
@@ -59,11 +67,13 @@ module.exports = function(grunt) {
 
   // Load plugins
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  grunt.loadTasks('tasks');
 
   // Register task(s)
   grunt.registerTask('default', [
     'clean',
     'concat',
+    'less_wrapper',
     'less',
     'cssmin'
   ]);
